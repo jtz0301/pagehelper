@@ -20,5 +20,22 @@
     <select id="queryAll" resultMap="BaseResultMap">
         select * from user
     </select>
+    
+    
+    <delete id="deleteByList">
+       delete from user where id in
+       <foreach collection="ids" open="(" separator="," close=")" item="haha">
+            #{haha}
+        </foreach>
+    </delete>
+    
+    
+    
+    <delete id="deleteByArray">
+       delete from user where id in
+       <foreach collection="ids" open="(" separator="," close=")" item="haha">
+            #{haha}
+        </foreach>
+    </delete>
 
 </mapper>

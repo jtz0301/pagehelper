@@ -25,6 +25,11 @@
             </bean>  
         </mvc:message-converters>
     </mvc:annotation-driven>
+    
+    
+    <bean class="com.jz.conf.MySwaggerConfig" />
+	<mvc:resources mapping="/swagger-ui.html" location="classpath:/META-INF/resources/" />
+	<mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/" />
 
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->  
     <!-- <bean id="mappingJacksonHttpMessageConverter"  
