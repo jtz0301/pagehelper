@@ -7,7 +7,7 @@
   
   <!-- 初始化框架的版本号 -->
     <properties>
-        <spring.version>4.3.7.RELEASE</spring.version>
+        <spring.version>5.2.5.RELEASE</spring.version>
         <jdk.version>1.8</jdk.version>
         <mysql.version>5.1.38</mysql.version>
         <druid.version>1.0.28</druid.version>
